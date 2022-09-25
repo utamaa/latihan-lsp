@@ -14,15 +14,14 @@ session_start();
     <title>form</title>
 </head>
 <body>
-    <h1>Hello</h1>
-
     <div class="container mt-5">
+        <?php include "message.php"; ?>
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Tambah
-                            <button href="index.php" class="btn btn-danger float-end">kembali</button>
+                        <h4>Add User
+                            <button href="index.php" class="btn btn-danger float-end">Back</button>
                         </h4>
                     </div>
                     <div class="card-body">
@@ -40,7 +39,7 @@ session_start();
                                 <input type="password" name="password" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <button type="submit" class=" btn btn-primary" name="sign up"></button>
+                                <button type="submit" class=" btn btn-primary" name="sign-up">Sign Up</button>
                             </div>
                         </form>
                     </div>
