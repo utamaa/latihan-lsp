@@ -13,33 +13,33 @@ session_start();
 
     <title>form</title>
 </head>
-<body>
-    <div class="container mt-5">
+<body> <?php include "navbar.php";  ?>
+    <div class="container">
         <?php include "message.php"; ?>
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
                         <h4>Add User
-                            <button href="index.php" class="btn btn-danger float-end">Back</button>
+                            <button href="#" class="btn btn-danger float-end">Back</button>
                         </h4>
                     </div>
                     <div class="card-body">
-                        <form action="sign-up.php" method="POST">
+                        <form action="sign_up.php" method="POST">
                             <div class="mb-3">
-                                <label for="firstName">User Name</label>
-                                <input type="text" name="UserName" class="form-control">
+                                <label>User Name</label>
+                                <input type="text" name="UserName" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <label for="firstName">Email</label>
-                                <input type="email" name="email" class="form-control">
+                                <label>Email</label>
+                                <input type="email" name="email" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <label for="firstName">Password</label>
-                                <input type="password" name="password" class="form-control">
+                                <label>Password</label>
+                                <input type="password" name="password" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <button type="submit" class=" btn btn-primary" name="sign-up">Sign Up</button>
+                                <button type="submit" class=" btn btn-primary" name="submit">Sign Up</button>
                             </div>
                         </form>
                     </div>

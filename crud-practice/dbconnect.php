@@ -1,12 +1,13 @@
 <?php
     $username = 'root';
     $password = '';
-    $servername = 'localhost';
-    $bdName = "latihan_users";
-
-    $conn = mysqli_connect($servername,$username,$password,$bdName);
+    $hostname = 'localhost';
+    $database = "crud_practice";
+    
+    $conn = mysqli_connect($hostname,$username,$password,$database);
+    
     if(!$conn) {
-        die("unable to connect" . mysqli_connect_error());
+        die("unable to connect " . mysqli_connect_error());
     }
 ?>
-Footer
+
